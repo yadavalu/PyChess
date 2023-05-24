@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(0, "..")
 from Chess import Board
 from Chess import Pieces
 from copy import deepcopy
@@ -6,7 +8,7 @@ import pygame
 
 pygame.init()
 
-logo = pygame.image.load(os.path.join("texture", "black", "knight.png"))
+logo = pygame.image.load(os.path.join("..", "texture", "black", "knight.png"))
 pygame.display.set_icon(logo)
 pygame.display.set_caption("Chess Analysis")
 screen = pygame.display.set_mode((1000, 800))
